@@ -67,7 +67,7 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
         balanceUpdate('balance-total', withdrawAmmount, false);
     }
 
-    if (withdrawAmmount > currentBalance) {
+    if (withdrawAmmount => currentBalance) {
         alert('Insufficient Balance');
     }
 
